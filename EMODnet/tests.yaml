@@ -5,8 +5,8 @@ tests:
       TIMEOUT: 600  # Optional: timeout in seconds
       URLS: ['http://vocab.nerc.ac.uk/ldes/P01/','http://vocab.nerc.ac.uk/ldes/P02/','http://vocab.nerc.ac.uk/ldes/P06/','http://vocab.nerc.ac.uk/ldes/L22','http://vocab.nerc.ac.uk/ldes/S09/', 'http://vocab.nerc.ac.uk/ldes/S25/']
       MIN-MEMBERS: 20
-      MIN-FRAGMENTS: 6
-      CREATE-ISSUE: true
+      MIN-FRAGMENTS: 10
+      create-issue: true
       MAX-AGE-YOUNGEST-MEMBER: 730
   LDES-feeds-mtt-vliz-be:
     image: ghcr.io/vliz-be-opsci/grmp-test-implementations-ldes-validation:main
@@ -15,7 +15,7 @@ tests:
       URLS: ['https://mtt.vliz.be/api/ldes/data/1/latest.ttl']
       MIN-MEMBERS: 20
       MIN-FRAGMENTS: 6
-      CREATE-ISSUE: true
+      create-issue: true
       MAX-AGE-YOUNGEST-MEMBER: 170
   LDES-seadatanet: 
     image: ghcr.io/vliz-be-opsci/grmp-test-implementations-ldes-validation:main
@@ -24,7 +24,7 @@ tests:
       URLS: ['https://edmo.seadatanet.org/ldes/feed', 'https://edmerp.seadatanet.org/ldes/feed']
       MIN-MEMBERS: 20
       MIN-FRAGMENTS: 6
-      CREATE-ISSUE: true
+      create-issue: true
       MAX-AGE-YOUNGEST-MEMBER: 730
   SPARQL-endpoints-resource-availability:
     image: ghcr.io/vliz-be-opsci/grmp-test-implementations-resource-availability:main
