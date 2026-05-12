@@ -812,7 +812,7 @@
 
                 // Check for a #run=<commit_sha> fragment and pre-select the matching run
                 const fragment = window.location.hash;
-                const fragmentMatch = fragment.match(/^#run=([0-9a-f]{7,40})$/i);
+                const fragmentMatch = fragment.match(/^#run=(([0-9a-f]{7})|([0-9a-f]{40}))$/i);
                 if (fragmentMatch) {
                     const targetSha = fragmentMatch[1].toLowerCase();
                     const matchIndex = runs.findIndex(r => r.commit_sha && r.commit_sha.toLowerCase().startsWith(targetSha));

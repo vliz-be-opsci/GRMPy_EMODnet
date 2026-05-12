@@ -479,14 +479,16 @@ jobs:
         if: steps.push_report.outcome == 'success'
         env:
           REPORT_BRANCH: ${{ github.event.inputs.report_branch }}
+          REPOSITORY: ${{ github.repository }}
           DASHBOARD_LABEL: ${{ github.event.inputs.dashboard_label || github.repository }}
           RUN_NUMBER: ${{ github.run_number }}
         run: |
           python3 - << 'PYEOF'
           import json, os
+          base_url = f"https://raw.githubusercontent.com/{os.environ['REPOSITORY']}/{os.environ['REPORT_BRANCH']}"
           cfg = {
-              "reportUrl": "https://raw.githubusercontent.com/${{ github.repository }}/" + os.environ["REPORT_BRANCH"] + "/report.xml",
-              "runsUrl":   "https://raw.githubusercontent.com/${{ github.repository }}/" + os.environ["REPORT_BRANCH"] + "/runs.json",
+              "reportUrl": f"{base_url}/report.xml",
+              "runsUrl":   f"{base_url}/runs.json",
               "label":     os.environ["DASHBOARD_LABEL"],
           }
           with open("config.json", "w") as f:
