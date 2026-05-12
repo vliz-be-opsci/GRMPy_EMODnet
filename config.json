@@ -1,0 +1,5 @@
+{
+  "reportUrl": "https://raw.githubusercontent.com/vliz-be-opsci/GRMPy_EMODnet/grmp-reports/report.xml",
+  "runsUrl": "https://raw.githubusercontent.com/vliz-be-opsci/GRMPy_EMODnet/grmp-reports/runs.json",
+  "label": "vliz-be-opsci/GRMPy_EMODnet"
+}
