@@ -59,6 +59,8 @@ The workflow requires the following repository permissions:
 | `issues: write` | Create and comment on GitHub issues |
 | `pages: read` | Fetch the GitHub Pages URL for dashboard deep links in issues |
 
+The optional `add-issue-to-project.yml` workflow uses `vars.OPSCI_PROJECT_URL` (with a fallback default) and `secrets.ORG_PAT` to add opened issues to an organization project. If you do not use that integration, disable or remove the workflow.
+
 ### Steps
 
 #### 1. Run tests
