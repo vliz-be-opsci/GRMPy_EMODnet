@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <testsuites>
-	<testsuite name="LDES-feeds-vocab-nerc" timestamp="2026-05-12T10:56:48.931952+00:00" tests="36" errors="0" failures="6" skipped="0" time="4.508615255355835">
-		<testcase name="ldes_harvest [http://vocab.nerc.ac.uk/ldes/P01/]" classname="LDES-feeds-vocab-nerc" time="1.2899153232574463">
+	<testsuite name="LDES-feeds-vocab-nerc" timestamp="2026-05-12T11:03:01.757033+00:00" tests="36" errors="0" failures="6" skipped="0" time="2.8139970302581787">
+		<testcase name="ldes_harvest [http://vocab.nerc.ac.uk/ldes/P01/]" classname="LDES-feeds-vocab-nerc" time="0.9478044509887695">
 			<system-out>Fetching RDF graph from: http://vocab.nerc.ac.uk/ldes/P01/
 HTTP 200, Content-Type: 'text/turtle', format: turtle
 Successfully parsed 832 triple(s)
 </system-out>
 		</testcase>
-		<testcase name="ldes_event_stream [http://vocab.nerc.ac.uk/ldes/P01/]" classname="LDES-feeds-vocab-nerc" time="7.05718994140625e-05">
+		<testcase name="ldes_event_stream [http://vocab.nerc.ac.uk/ldes/P01/]" classname="LDES-feeds-vocab-nerc" time="7.224082946777344e-05">
 			<system-out>Found 1 ldes:EventStream declaration(s)
   EventStream: http://vocab.nerc.ac.uk/ldes/P01
 </system-out>
 		</testcase>
-		<testcase name="ldes_tree_view [http://vocab.nerc.ac.uk/ldes/P01/]" classname="LDES-feeds-vocab-nerc" time="2.3603439331054688e-05">
+		<testcase name="ldes_tree_view [http://vocab.nerc.ac.uk/ldes/P01/]" classname="LDES-feeds-vocab-nerc" time="2.384185791015625e-05">
 			<system-out>Found 1 tree:view relation(s)
   tree:view: http://vocab.nerc.ac.uk/ldes/P01/2026_04_21_10_16_06_2026_05_06_10_12_50.ttl
 </system-out>
 		</testcase>
-		<testcase name="ldes_min_members [http://vocab.nerc.ac.uk/ldes/P01/]" classname="LDES-feeds-vocab-nerc" time="0.00023102760314941406">
+		<testcase name="ldes_min_members [http://vocab.nerc.ac.uk/ldes/P01/]" classname="LDES-feeds-vocab-nerc" time="0.00022029876708984375">
 			<system-out>Traversing LDES feed from: http://vocab.nerc.ac.uk/ldes/P01/
 Fetching LDES fragment: http://vocab.nerc.ac.uk/ldes/P01/2026_04_21_10_16_06_2026_05_06_10_12_50.ttl
 HTTP 200, Content-Type: 'text/turtle', format: turtle
@@ -41,7 +41,7 @@ Traversal complete: 10 fragment(s) fetched, 1602 total triple(s)
 Found 168 tree:member(s) across 10 traversed fragment(s); required minimum: 20
 </system-out>
 		</testcase>
-		<testcase name="ldes_min_fragments [http://vocab.nerc.ac.uk/ldes/P01/]" classname="LDES-feeds-vocab-nerc" time="2.6941299438476562e-05">
+		<testcase name="ldes_min_fragments [http://vocab.nerc.ac.uk/ldes/P01/]" classname="LDES-feeds-vocab-nerc" time="2.5510787963867188e-05">
 			<system-out>Traversing LDES feed from: http://vocab.nerc.ac.uk/ldes/P01/
 Fetching LDES fragment: http://vocab.nerc.ac.uk/ldes/P01/2026_04_21_10_16_06_2026_05_06_10_12_50.ttl
 HTTP 200, Content-Type: 'text/turtle', format: turtle
@@ -75,7 +75,7 @@ Traversed 10 LDES fragment(s) (following tree:Relation → tree:node links); req
   fragment: http://vocab.nerc.ac.uk/ldes/P01/2026_04_21_10_16_06_2026_05_06_10_12_50.ttl
 </system-out>
 		</testcase>
-		<testcase name="ldes_max_age_youngest_member [http://vocab.nerc.ac.uk/ldes/P01/]" classname="LDES-feeds-vocab-nerc" time="0.001461029052734375">
+		<testcase name="ldes_max_age_youngest_member [http://vocab.nerc.ac.uk/ldes/P01/]" classname="LDES-feeds-vocab-nerc" time="0.0014371871948242188">
 			<failure message="No timestamp found on any tree:member">The LDES feed at http://vocab.nerc.ac.uk/ldes/P01/ contains no members with a recognisable timestamp (checked dcterms:modified, dcterms:created, prov:generatedAtTime, schema:dateModified)</failure>
 			<system-out>Traversing LDES feed from: http://vocab.nerc.ac.uk/ldes/P01/
 Fetching LDES fragment: http://vocab.nerc.ac.uk/ldes/P01/2026_04_21_10_16_06_2026_05_06_10_12_50.ttl
@@ -102,23 +102,23 @@ Checking age of youngest tree:member across 10 traversed fragment(s) of: http://
 			<system-err>No timestamp found on any tree:member (checked 4 predicate(s))
 </system-err>
 		</testcase>
-		<testcase name="ldes_harvest [http://vocab.nerc.ac.uk/ldes/P02/]" classname="LDES-feeds-vocab-nerc" time="0.7725098133087158">
+		<testcase name="ldes_harvest [http://vocab.nerc.ac.uk/ldes/P02/]" classname="LDES-feeds-vocab-nerc" time="0.41117238998413086">
 			<system-out>Fetching RDF graph from: http://vocab.nerc.ac.uk/ldes/P02/
 HTTP 200, Content-Type: 'text/turtle', format: turtle
 Successfully parsed 40 triple(s)
 </system-out>
 		</testcase>
-		<testcase name="ldes_event_stream [http://vocab.nerc.ac.uk/ldes/P02/]" classname="LDES-feeds-vocab-nerc" time="3.8623809814453125e-05">
+		<testcase name="ldes_event_stream [http://vocab.nerc.ac.uk/ldes/P02/]" classname="LDES-feeds-vocab-nerc" time="3.9577484130859375e-05">
 			<system-out>Found 1 ldes:EventStream declaration(s)
   EventStream: http://vocab.nerc.ac.uk/ldes/P02
 </system-out>
 		</testcase>
-		<testcase name="ldes_tree_view [http://vocab.nerc.ac.uk/ldes/P02/]" classname="LDES-feeds-vocab-nerc" time="2.0503997802734375e-05">
+		<testcase name="ldes_tree_view [http://vocab.nerc.ac.uk/ldes/P02/]" classname="LDES-feeds-vocab-nerc" time="2.09808349609375e-05">
 			<system-out>Found 1 tree:view relation(s)
   tree:view: http://vocab.nerc.ac.uk/ldes/P02/2026_04_16_10_12_30_2026_04_23_10_11_49.ttl
 </system-out>
 		</testcase>
-		<testcase name="ldes_min_members [http://vocab.nerc.ac.uk/ldes/P02/]" classname="LDES-feeds-vocab-nerc" time="0.00012969970703125">
+		<testcase name="ldes_min_members [http://vocab.nerc.ac.uk/ldes/P02/]" classname="LDES-feeds-vocab-nerc" time="0.00014472007751464844">
 			<system-out>Traversing LDES feed from: http://vocab.nerc.ac.uk/ldes/P02/
 Fetching LDES fragment: http://vocab.nerc.ac.uk/ldes/P02/2026_04_16_10_12_30_2026_04_23_10_11_49.ttl
 HTTP 200, Content-Type: 'text/turtle', format: turtle
@@ -176,7 +176,7 @@ Traversed 10 LDES fragment(s) (following tree:Relation → tree:node links); req
   fragment: http://vocab.nerc.ac.uk/ldes/P02/2026_04_16_10_12_30_2026_04_23_10_11_49.ttl
 </system-out>
 		</testcase>
-		<testcase name="ldes_max_age_youngest_member [http://vocab.nerc.ac.uk/ldes/P02/]" classname="LDES-feeds-vocab-nerc" time="0.0006983280181884766">
+		<testcase name="ldes_max_age_youngest_member [http://vocab.nerc.ac.uk/ldes/P02/]" classname="LDES-feeds-vocab-nerc" time="0.0006744861602783203">
 			<failure message="No timestamp found on any tree:member">The LDES feed at http://vocab.nerc.ac.uk/ldes/P02/ contains no members with a recognisable timestamp (checked dcterms:modified, dcterms:created, prov:generatedAtTime, schema:dateModified)</failure>
 			<system-out>Traversing LDES feed from: http://vocab.nerc.ac.uk/ldes/P02/
 Fetching LDES fragment: http://vocab.nerc.ac.uk/ldes/P02/2026_04_16_10_12_30_2026_04_23_10_11_49.ttl
@@ -203,13 +203,13 @@ Checking age of youngest tree:member across 10 traversed fragment(s) of: http://
 			<system-err>No timestamp found on any tree:member (checked 4 predicate(s))
 </system-err>
 		</testcase>
-		<testcase name="ldes_harvest [http://vocab.nerc.ac.uk/ldes/P06/]" classname="LDES-feeds-vocab-nerc" time="0.449970006942749">
+		<testcase name="ldes_harvest [http://vocab.nerc.ac.uk/ldes/P06/]" classname="LDES-feeds-vocab-nerc" time="0.3112030029296875">
 			<system-out>Fetching RDF graph from: http://vocab.nerc.ac.uk/ldes/P06/
 HTTP 200, Content-Type: 'text/turtle', format: turtle
 Successfully parsed 40 triple(s)
 </system-out>
 		</testcase>
-		<testcase name="ldes_event_stream [http://vocab.nerc.ac.uk/ldes/P06/]" classname="LDES-feeds-vocab-nerc" time="3.7670135498046875e-05">
+		<testcase name="ldes_event_stream [http://vocab.nerc.ac.uk/ldes/P06/]" classname="LDES-feeds-vocab-nerc" time="3.981590270996094e-05">
 			<system-out>Found 1 ldes:EventStream declaration(s)
   EventStream: http://vocab.nerc.ac.uk/ldes/P06
 </system-out>
@@ -219,7 +219,7 @@ Successfully parsed 40 triple(s)
   tree:view: http://vocab.nerc.ac.uk/ldes/P06/2026_03_26_10_13_56_2026_04_14_10_12_23.ttl
 </system-out>
 		</testcase>
-		<testcase name="ldes_min_members [http://vocab.nerc.ac.uk/ldes/P06/]" classname="LDES-feeds-vocab-nerc" time="0.00012969970703125">
+		<testcase name="ldes_min_members [http://vocab.nerc.ac.uk/ldes/P06/]" classname="LDES-feeds-vocab-nerc" time="0.00012922286987304688">
 			<system-out>Traversing LDES feed from: http://vocab.nerc.ac.uk/ldes/P06/
 Fetching LDES fragment: http://vocab.nerc.ac.uk/ldes/P06/2026_03_26_10_13_56_2026_04_14_10_12_23.ttl
 HTTP 200, Content-Type: 'text/turtle', format: turtle
@@ -243,7 +243,7 @@ Traversal complete: 10 fragment(s) fetched, 951 total triple(s)
 Found 85 tree:member(s) across 10 traversed fragment(s); required minimum: 20
 </system-out>
 		</testcase>
-		<testcase name="ldes_min_fragments [http://vocab.nerc.ac.uk/ldes/P06/]" classname="LDES-feeds-vocab-nerc" time="1.4781951904296875e-05">
+		<testcase name="ldes_min_fragments [http://vocab.nerc.ac.uk/ldes/P06/]" classname="LDES-feeds-vocab-nerc" time="1.4066696166992188e-05">
 			<system-out>Traversing LDES feed from: http://vocab.nerc.ac.uk/ldes/P06/
 Fetching LDES fragment: http://vocab.nerc.ac.uk/ldes/P06/2026_03_26_10_13_56_2026_04_14_10_12_23.ttl
 HTTP 200, Content-Type: 'text/turtle', format: turtle
@@ -277,7 +277,7 @@ Traversed 10 LDES fragment(s) (following tree:Relation → tree:node links); req
   fragment: http://vocab.nerc.ac.uk/ldes/P06/2026_03_26_10_13_56_2026_04_14_10_12_23.ttl
 </system-out>
 		</testcase>
-		<testcase name="ldes_max_age_youngest_member [http://vocab.nerc.ac.uk/ldes/P06/]" classname="LDES-feeds-vocab-nerc" time="0.0007491111755371094">
+		<testcase name="ldes_max_age_youngest_member [http://vocab.nerc.ac.uk/ldes/P06/]" classname="LDES-feeds-vocab-nerc" time="0.000732421875">
 			<failure message="No timestamp found on any tree:member">The LDES feed at http://vocab.nerc.ac.uk/ldes/P06/ contains no members with a recognisable timestamp (checked dcterms:modified, dcterms:created, prov:generatedAtTime, schema:dateModified)</failure>
 			<system-out>Traversing LDES feed from: http://vocab.nerc.ac.uk/ldes/P06/
 Fetching LDES fragment: http://vocab.nerc.ac.uk/ldes/P06/2026_03_26_10_13_56_2026_04_14_10_12_23.ttl
@@ -304,23 +304,23 @@ Checking age of youngest tree:member across 10 traversed fragment(s) of: http://
 			<system-err>No timestamp found on any tree:member (checked 4 predicate(s))
 </system-err>
 		</testcase>
-		<testcase name="ldes_harvest [http://vocab.nerc.ac.uk/ldes/L22]" classname="LDES-feeds-vocab-nerc" time="0.64601731300354">
+		<testcase name="ldes_harvest [http://vocab.nerc.ac.uk/ldes/L22]" classname="LDES-feeds-vocab-nerc" time="0.31545567512512207">
 			<system-out>Fetching RDF graph from: http://vocab.nerc.ac.uk/ldes/L22
 HTTP 200, Content-Type: 'text/turtle', format: turtle
 Successfully parsed 40 triple(s)
 </system-out>
 		</testcase>
-		<testcase name="ldes_event_stream [http://vocab.nerc.ac.uk/ldes/L22]" classname="LDES-feeds-vocab-nerc" time="3.743171691894531e-05">
+		<testcase name="ldes_event_stream [http://vocab.nerc.ac.uk/ldes/L22]" classname="LDES-feeds-vocab-nerc" time="3.838539123535156e-05">
 			<system-out>Found 1 ldes:EventStream declaration(s)
   EventStream: http://vocab.nerc.ac.uk/ldes/L22
 </system-out>
 		</testcase>
-		<testcase name="ldes_tree_view [http://vocab.nerc.ac.uk/ldes/L22]" classname="LDES-feeds-vocab-nerc" time="1.9788742065429688e-05">
+		<testcase name="ldes_tree_view [http://vocab.nerc.ac.uk/ldes/L22]" classname="LDES-feeds-vocab-nerc" time="2.002716064453125e-05">
 			<system-out>Found 1 tree:view relation(s)
   tree:view: http://vocab.nerc.ac.uk/ldes/L22/2026_05_01_10_12_53_2026_05_06_10_12_46.ttl
 </system-out>
 		</testcase>
-		<testcase name="ldes_min_members [http://vocab.nerc.ac.uk/ldes/L22]" classname="LDES-feeds-vocab-nerc" time="6.031990051269531e-05">
+		<testcase name="ldes_min_members [http://vocab.nerc.ac.uk/ldes/L22]" classname="LDES-feeds-vocab-nerc" time="5.91278076171875e-05">
 			<system-out>Traversing LDES feed from: http://vocab.nerc.ac.uk/ldes/L22
 Fetching LDES fragment: http://vocab.nerc.ac.uk/ldes/L22/2026_05_01_10_12_53_2026_05_06_10_12_46.ttl
 HTTP 200, Content-Type: 'text/turtle', format: turtle
@@ -344,7 +344,7 @@ Traversal complete: 10 fragment(s) fetched, 433 total triple(s)
 Found 20 tree:member(s) across 10 traversed fragment(s); required minimum: 20
 </system-out>
 		</testcase>
-		<testcase name="ldes_min_fragments [http://vocab.nerc.ac.uk/ldes/L22]" classname="LDES-feeds-vocab-nerc" time="1.4781951904296875e-05">
+		<testcase name="ldes_min_fragments [http://vocab.nerc.ac.uk/ldes/L22]" classname="LDES-feeds-vocab-nerc" time="1.3828277587890625e-05">
 			<system-out>Traversing LDES feed from: http://vocab.nerc.ac.uk/ldes/L22
 Fetching LDES fragment: http://vocab.nerc.ac.uk/ldes/L22/2026_05_01_10_12_53_2026_05_06_10_12_46.ttl
 HTTP 200, Content-Type: 'text/turtle', format: turtle
@@ -378,7 +378,7 @@ Traversed 10 LDES fragment(s) (following tree:Relation → tree:node links); req
   fragment: http://vocab.nerc.ac.uk/ldes/L22/2026_05_01_10_12_53_2026_05_06_10_12_46.ttl
 </system-out>
 		</testcase>
-		<testcase name="ldes_max_age_youngest_member [http://vocab.nerc.ac.uk/ldes/L22]" classname="LDES-feeds-vocab-nerc" time="0.00023031234741210938">
+		<testcase name="ldes_max_age_youngest_member [http://vocab.nerc.ac.uk/ldes/L22]" classname="LDES-feeds-vocab-nerc" time="0.00019478797912597656">
 			<failure message="No timestamp found on any tree:member">The LDES feed at http://vocab.nerc.ac.uk/ldes/L22 contains no members with a recognisable timestamp (checked dcterms:modified, dcterms:created, prov:generatedAtTime, schema:dateModified)</failure>
 			<system-out>Traversing LDES feed from: http://vocab.nerc.ac.uk/ldes/L22
 Fetching LDES fragment: http://vocab.nerc.ac.uk/ldes/L22/2026_05_01_10_12_53_2026_05_06_10_12_46.ttl
@@ -405,23 +405,23 @@ Checking age of youngest tree:member across 10 traversed fragment(s) of: http://
 			<system-err>No timestamp found on any tree:member (checked 4 predicate(s))
 </system-err>
 		</testcase>
-		<testcase name="ldes_harvest [http://vocab.nerc.ac.uk/ldes/S09/]" classname="LDES-feeds-vocab-nerc" time="0.6512012481689453">
+		<testcase name="ldes_harvest [http://vocab.nerc.ac.uk/ldes/S09/]" classname="LDES-feeds-vocab-nerc" time="0.4074392318725586">
 			<system-out>Fetching RDF graph from: http://vocab.nerc.ac.uk/ldes/S09/
 HTTP 200, Content-Type: 'text/turtle', format: turtle
 Successfully parsed 56 triple(s)
 </system-out>
 		</testcase>
-		<testcase name="ldes_event_stream [http://vocab.nerc.ac.uk/ldes/S09/]" classname="LDES-feeds-vocab-nerc" time="3.4809112548828125e-05">
+		<testcase name="ldes_event_stream [http://vocab.nerc.ac.uk/ldes/S09/]" classname="LDES-feeds-vocab-nerc" time="3.790855407714844e-05">
 			<system-out>Found 1 ldes:EventStream declaration(s)
   EventStream: http://vocab.nerc.ac.uk/ldes/S09
 </system-out>
 		</testcase>
-		<testcase name="ldes_tree_view [http://vocab.nerc.ac.uk/ldes/S09/]" classname="LDES-feeds-vocab-nerc" time="1.9550323486328125e-05">
+		<testcase name="ldes_tree_view [http://vocab.nerc.ac.uk/ldes/S09/]" classname="LDES-feeds-vocab-nerc" time="5.91278076171875e-05">
 			<system-out>Found 1 tree:view relation(s)
   tree:view: http://vocab.nerc.ac.uk/ldes/S09/2024_01_01_00_00_00_2025_12_16_10_15_08.ttl
 </system-out>
 		</testcase>
-		<testcase name="ldes_min_members [http://vocab.nerc.ac.uk/ldes/S09/]" classname="LDES-feeds-vocab-nerc" time="8.654594421386719e-05">
+		<testcase name="ldes_min_members [http://vocab.nerc.ac.uk/ldes/S09/]" classname="LDES-feeds-vocab-nerc" time="9.894371032714844e-05">
 			<system-out>Traversing LDES feed from: http://vocab.nerc.ac.uk/ldes/S09/
 Fetching LDES fragment: http://vocab.nerc.ac.uk/ldes/S09/2024_01_01_00_00_00_2025_12_16_10_15_08.ttl
 HTTP 200, Content-Type: 'text/turtle', format: turtle
@@ -445,7 +445,7 @@ Traversal complete: 10 fragment(s) fetched, 641 total triple(s)
 Found 46 tree:member(s) across 10 traversed fragment(s); required minimum: 20
 </system-out>
 		</testcase>
-		<testcase name="ldes_min_fragments [http://vocab.nerc.ac.uk/ldes/S09/]" classname="LDES-feeds-vocab-nerc" time="1.3589859008789062e-05">
+		<testcase name="ldes_min_fragments [http://vocab.nerc.ac.uk/ldes/S09/]" classname="LDES-feeds-vocab-nerc" time="1.4066696166992188e-05">
 			<system-out>Traversing LDES feed from: http://vocab.nerc.ac.uk/ldes/S09/
 Fetching LDES fragment: http://vocab.nerc.ac.uk/ldes/S09/2024_01_01_00_00_00_2025_12_16_10_15_08.ttl
 HTTP 200, Content-Type: 'text/turtle', format: turtle
@@ -479,7 +479,7 @@ Traversed 10 LDES fragment(s) (following tree:Relation → tree:node links); req
   fragment: http://vocab.nerc.ac.uk/ldes/S09/2024_01_01_00_00_00_2025_12_16_10_15_08.ttl
 </system-out>
 		</testcase>
-		<testcase name="ldes_max_age_youngest_member [http://vocab.nerc.ac.uk/ldes/S09/]" classname="LDES-feeds-vocab-nerc" time="0.00040221214294433594">
+		<testcase name="ldes_max_age_youngest_member [http://vocab.nerc.ac.uk/ldes/S09/]" classname="LDES-feeds-vocab-nerc" time="0.0003955364227294922">
 			<failure message="No timestamp found on any tree:member">The LDES feed at http://vocab.nerc.ac.uk/ldes/S09/ contains no members with a recognisable timestamp (checked dcterms:modified, dcterms:created, prov:generatedAtTime, schema:dateModified)</failure>
 			<system-out>Traversing LDES feed from: http://vocab.nerc.ac.uk/ldes/S09/
 Fetching LDES fragment: http://vocab.nerc.ac.uk/ldes/S09/2024_01_01_00_00_00_2025_12_16_10_15_08.ttl
@@ -506,23 +506,23 @@ Checking age of youngest tree:member across 10 traversed fragment(s) of: http://
 			<system-err>No timestamp found on any tree:member (checked 4 predicate(s))
 </system-err>
 		</testcase>
-		<testcase name="ldes_harvest [http://vocab.nerc.ac.uk/ldes/S25/]" classname="LDES-feeds-vocab-nerc" time="0.6884844303131104">
+		<testcase name="ldes_harvest [http://vocab.nerc.ac.uk/ldes/S25/]" classname="LDES-feeds-vocab-nerc" time="0.410353422164917">
 			<system-out>Fetching RDF graph from: http://vocab.nerc.ac.uk/ldes/S25/
 HTTP 200, Content-Type: 'text/turtle', format: turtle
 Successfully parsed 48 triple(s)
 </system-out>
 		</testcase>
-		<testcase name="ldes_event_stream [http://vocab.nerc.ac.uk/ldes/S25/]" classname="LDES-feeds-vocab-nerc" time="3.933906555175781e-05">
+		<testcase name="ldes_event_stream [http://vocab.nerc.ac.uk/ldes/S25/]" classname="LDES-feeds-vocab-nerc" time="4.3392181396484375e-05">
 			<system-out>Found 1 ldes:EventStream declaration(s)
   EventStream: http://vocab.nerc.ac.uk/ldes/S25
 </system-out>
 		</testcase>
-		<testcase name="ldes_tree_view [http://vocab.nerc.ac.uk/ldes/S25/]" classname="LDES-feeds-vocab-nerc" time="2.193450927734375e-05">
+		<testcase name="ldes_tree_view [http://vocab.nerc.ac.uk/ldes/S25/]" classname="LDES-feeds-vocab-nerc" time="2.0503997802734375e-05">
 			<system-out>Found 1 tree:view relation(s)
   tree:view: http://vocab.nerc.ac.uk/ldes/S25/2026_02_20_10_14_07_2026_04_01_10_14_50.ttl
 </system-out>
 		</testcase>
-		<testcase name="ldes_min_members [http://vocab.nerc.ac.uk/ldes/S25/]" classname="LDES-feeds-vocab-nerc" time="0.0007307529449462891">
+		<testcase name="ldes_min_members [http://vocab.nerc.ac.uk/ldes/S25/]" classname="LDES-feeds-vocab-nerc" time="0.0007104873657226562">
 			<system-out>Traversing LDES feed from: http://vocab.nerc.ac.uk/ldes/S25/
 Fetching LDES fragment: http://vocab.nerc.ac.uk/ldes/S25/2026_02_20_10_14_07_2026_04_01_10_14_50.ttl
 HTTP 200, Content-Type: 'text/turtle', format: turtle
@@ -546,7 +546,7 @@ Traversal complete: 10 fragment(s) fetched, 5337 total triple(s)
 Found 633 tree:member(s) across 10 traversed fragment(s); required minimum: 20
 </system-out>
 		</testcase>
-		<testcase name="ldes_min_fragments [http://vocab.nerc.ac.uk/ldes/S25/]" classname="LDES-feeds-vocab-nerc" time="1.3828277587890625e-05">
+		<testcase name="ldes_min_fragments [http://vocab.nerc.ac.uk/ldes/S25/]" classname="LDES-feeds-vocab-nerc" time="1.5020370483398438e-05">
 			<system-out>Traversing LDES feed from: http://vocab.nerc.ac.uk/ldes/S25/
 Fetching LDES fragment: http://vocab.nerc.ac.uk/ldes/S25/2026_02_20_10_14_07_2026_04_01_10_14_50.ttl
 HTTP 200, Content-Type: 'text/turtle', format: turtle
@@ -580,7 +580,7 @@ Traversed 10 LDES fragment(s) (following tree:Relation → tree:node links); req
   fragment: http://vocab.nerc.ac.uk/ldes/S25/2026_02_20_10_14_07_2026_04_01_10_14_50.ttl
 </system-out>
 		</testcase>
-		<testcase name="ldes_max_age_youngest_member [http://vocab.nerc.ac.uk/ldes/S25/]" classname="LDES-feeds-vocab-nerc" time="0.005125999450683594">
+		<testcase name="ldes_max_age_youngest_member [http://vocab.nerc.ac.uk/ldes/S25/]" classname="LDES-feeds-vocab-nerc" time="0.005239009857177734">
 			<failure message="No timestamp found on any tree:member">The LDES feed at http://vocab.nerc.ac.uk/ldes/S25/ contains no members with a recognisable timestamp (checked dcterms:modified, dcterms:created, prov:generatedAtTime, schema:dateModified)</failure>
 			<system-out>Traversing LDES feed from: http://vocab.nerc.ac.uk/ldes/S25/
 Fetching LDES fragment: http://vocab.nerc.ac.uk/ldes/S25/2026_02_20_10_14_07_2026_04_01_10_14_50.ttl
@@ -609,31 +609,31 @@ Checking age of youngest tree:member across 10 traversed fragment(s) of: http://
 		</testcase>
 		<properties>
 			<property name="urls" value="http://vocab.nerc.ac.uk/ldes/P01/, http://vocab.nerc.ac.uk/ldes/P02/, http://vocab.nerc.ac.uk/ldes/P06/, http://vocab.nerc.ac.uk/ldes/L22, http://vocab.nerc.ac.uk/ldes/S09/, http://vocab.nerc.ac.uk/ldes/S25/"/>
-			<property name="provenance" value="https://github.com/vliz-be-opsci/GRMPy_EMODnet/blob/12ffd814d750045a4bfc1bba8f94fb251e3d4dc5/EMODnet/tests.yaml"/>
+			<property name="provenance" value="https://github.com/vliz-be-opsci/GRMPy_EMODnet/blob/93c16c5806526995c786734efc3cef0621de73a5/EMODnet/tests.yaml"/>
 			<property name="min_members" value="20"/>
 			<property name="min_fragments" value="10"/>
 			<property name="max_age_youngest_member" value="730"/>
 			<property name="create-issue" value="true"/>
 		</properties>
 	</testsuite>
-	<testsuite name="LDES-feeds-mtt-vliz-be" timestamp="2026-05-12T10:56:57.441656+00:00" tests="6" errors="0" failures="0" skipped="0" time="0.7733211517333984">
-		<testcase name="ldes_harvest [https://mtt.vliz.be/api/ldes/data/1/latest.ttl]" classname="LDES-feeds-mtt-vliz-be" time="0.7714519500732422">
+	<testsuite name="LDES-feeds-mtt-vliz-be" timestamp="2026-05-12T11:03:06.085055+00:00" tests="6" errors="0" failures="0" skipped="0" time="0.5699005126953125">
+		<testcase name="ldes_harvest [https://mtt.vliz.be/api/ldes/data/1/latest.ttl]" classname="LDES-feeds-mtt-vliz-be" time="0.5680892467498779">
 			<system-out>Fetching RDF graph from: https://mtt.vliz.be/api/ldes/data/1/latest.ttl
 HTTP 200, Content-Type: 'text/turtle; charset=utf-8', format: turtle
 Successfully parsed 25 triple(s)
 </system-out>
 		</testcase>
-		<testcase name="ldes_event_stream [https://mtt.vliz.be/api/ldes/data/1/latest.ttl]" classname="LDES-feeds-mtt-vliz-be" time="6.961822509765625e-05">
+		<testcase name="ldes_event_stream [https://mtt.vliz.be/api/ldes/data/1/latest.ttl]" classname="LDES-feeds-mtt-vliz-be" time="7.486343383789062e-05">
 			<system-out>Found 1 ldes:EventStream declaration(s)
   EventStream: https://mtt.vliz.be/api/ldes/data/1/feed
 </system-out>
 		</testcase>
-		<testcase name="ldes_tree_view [https://mtt.vliz.be/api/ldes/data/1/latest.ttl]" classname="LDES-feeds-mtt-vliz-be" time="2.2411346435546875e-05">
+		<testcase name="ldes_tree_view [https://mtt.vliz.be/api/ldes/data/1/latest.ttl]" classname="LDES-feeds-mtt-vliz-be" time="2.3365020751953125e-05">
 			<system-out>Found 1 tree:view relation(s)
   tree:view: https://mtt.vliz.be/api/ldes/data/1/1778160262.ttl
 </system-out>
 		</testcase>
-		<testcase name="ldes_min_members [https://mtt.vliz.be/api/ldes/data/1/latest.ttl]" classname="LDES-feeds-mtt-vliz-be" time="0.00017762184143066406">
+		<testcase name="ldes_min_members [https://mtt.vliz.be/api/ldes/data/1/latest.ttl]" classname="LDES-feeds-mtt-vliz-be" time="0.0001761913299560547">
 			<system-out>Traversing LDES feed from: https://mtt.vliz.be/api/ldes/data/1/latest.ttl
 Fetching LDES fragment: https://mtt.vliz.be/api/ldes/data/1/1778160262.ttl
 HTTP 200, Content-Type: 'text/turtle; charset=utf-8', format: turtle
@@ -671,7 +671,7 @@ Traversed 6 LDES fragment(s) (following tree:Relation → tree:node links); requ
   fragment: https://mtt.vliz.be/api/ldes/data/1/latest.ttl
 </system-out>
 		</testcase>
-		<testcase name="ldes_max_age_youngest_member [https://mtt.vliz.be/api/ldes/data/1/latest.ttl]" classname="LDES-feeds-mtt-vliz-be" time="0.0015757083892822266">
+		<testcase name="ldes_max_age_youngest_member [https://mtt.vliz.be/api/ldes/data/1/latest.ttl]" classname="LDES-feeds-mtt-vliz-be" time="0.0015130043029785156">
 			<system-out>Traversing LDES feed from: https://mtt.vliz.be/api/ldes/data/1/latest.ttl
 Fetching LDES fragment: https://mtt.vliz.be/api/ldes/data/1/1778160262.ttl
 HTTP 200, Content-Type: 'text/turtle; charset=utf-8', format: turtle
@@ -685,20 +685,20 @@ Fetching LDES fragment: https://mtt.vliz.be/api/ldes/data/1/1776233413.ttl
 HTTP 200, Content-Type: 'text/turtle; charset=utf-8', format: turtle
 Traversal complete: 6 fragment(s) fetched, 683 total triple(s)
 Checking age of youngest tree:member across 6 traversed fragment(s) of: https://mtt.vliz.be/api/ldes/data/1/latest.ttl
-Youngest member timestamp: 2026-05-07T13:24:22+00:00; age: 117.54 hour(s); maximum allowed: 170 hour(s)
+Youngest member timestamp: 2026-05-07T13:24:22+00:00; age: 117.65 hour(s); maximum allowed: 170 hour(s)
 </system-out>
 		</testcase>
 		<properties>
 			<property name="urls" value="https://mtt.vliz.be/api/ldes/data/1/latest.ttl"/>
-			<property name="provenance" value="https://github.com/vliz-be-opsci/GRMPy_EMODnet/blob/12ffd814d750045a4bfc1bba8f94fb251e3d4dc5/EMODnet/tests.yaml"/>
+			<property name="provenance" value="https://github.com/vliz-be-opsci/GRMPy_EMODnet/blob/93c16c5806526995c786734efc3cef0621de73a5/EMODnet/tests.yaml"/>
 			<property name="min_members" value="20"/>
 			<property name="min_fragments" value="6"/>
 			<property name="max_age_youngest_member" value="170"/>
 			<property name="create-issue" value="true"/>
 		</properties>
 	</testsuite>
-	<testsuite name="LDES-seadatanet" timestamp="2026-05-12T10:57:08.643986+00:00" tests="12" errors="0" failures="2" skipped="5" time="2.032290458679199">
-		<testcase name="ldes_harvest [https://edmo.seadatanet.org/ldes/feed]" classname="LDES-seadatanet" time="1.0339748859405518">
+	<testsuite name="LDES-seadatanet" timestamp="2026-05-12T11:03:11.449641+00:00" tests="12" errors="0" failures="2" skipped="5" time="1.65266752243042">
+		<testcase name="ldes_harvest [https://edmo.seadatanet.org/ldes/feed]" classname="LDES-seadatanet" time="0.7217881679534912">
 			<failure message="Could not fetch or parse RDF from https://edmo.seadatanet.org/ldes/feed">404 Client Error: Not Found for url: https://edmo.seadatanet.org/ldes/feed</failure>
 			<system-out>Fetching RDF graph from: https://edmo.seadatanet.org/ldes/feed
 </system-out>
@@ -720,23 +720,23 @@ Youngest member timestamp: 2026-05-07T13:24:22+00:00; age: 117.54 hour(s); maxim
 		<testcase name="ldes_max_age_youngest_member [https://edmo.seadatanet.org/ldes/feed]" classname="LDES-seadatanet" time="0.0">
 			<skipped message="RDF harvest failed"/>
 		</testcase>
-		<testcase name="ldes_harvest [https://edmerp.seadatanet.org/ldes/feed]" classname="LDES-seadatanet" time="0.9979803562164307">
+		<testcase name="ldes_harvest [https://edmerp.seadatanet.org/ldes/feed]" classname="LDES-seadatanet" time="0.9305438995361328">
 			<system-out>Fetching RDF graph from: https://edmerp.seadatanet.org/ldes/feed
 HTTP 200, Content-Type: 'text/turtle;charset=UTF-8', format: turtle
 Successfully parsed 280 triple(s)
 </system-out>
 		</testcase>
-		<testcase name="ldes_event_stream [https://edmerp.seadatanet.org/ldes/feed]" classname="LDES-seadatanet" time="7.271766662597656e-05">
+		<testcase name="ldes_event_stream [https://edmerp.seadatanet.org/ldes/feed]" classname="LDES-seadatanet" time="7.700920104980469e-05">
 			<system-out>Found 1 ldes:EventStream declaration(s)
   EventStream: https://edmerp.seadatanet.org/ldes/feed
 </system-out>
 		</testcase>
-		<testcase name="ldes_tree_view [https://edmerp.seadatanet.org/ldes/feed]" classname="LDES-seadatanet" time="2.5033950805664062e-05">
+		<testcase name="ldes_tree_view [https://edmerp.seadatanet.org/ldes/feed]" classname="LDES-seadatanet" time="2.6226043701171875e-05">
 			<system-out>Found 1 tree:view relation(s)
   tree:view: https://edmerp.seadatanet.org/ldes/feed?from=2026-04-27T14%3A01%3A02%2B02%3A00&amp;to=2026-04-28T14%3A01%3A02%2B02%3A00
 </system-out>
 		</testcase>
-		<testcase name="ldes_min_members [https://edmerp.seadatanet.org/ldes/feed]" classname="LDES-seadatanet" time="5.602836608886719e-05">
+		<testcase name="ldes_min_members [https://edmerp.seadatanet.org/ldes/feed]" classname="LDES-seadatanet" time="5.555152893066406e-05">
 			<failure message="Insufficient members: found 7, expected at least 20">The event stream at https://edmerp.seadatanet.org/ldes/feed exposes only 7 tree:member triple(s) across 6 traversed fragment(s), but at least 20 are required</failure>
 			<system-out>Traversing LDES feed from: https://edmerp.seadatanet.org/ldes/feed
 Fetching LDES fragment: https://edmerp.seadatanet.org/ldes/feed?from=2026-04-27T14%3A01%3A02%2B02%3A00&amp;to=2026-04-28T14%3A01%3A02%2B02%3A00
@@ -755,7 +755,7 @@ Found 7 tree:member(s) across 6 traversed fragment(s); required minimum: 20
 			<system-err>Insufficient members: 7 &lt; 20
 </system-err>
 		</testcase>
-		<testcase name="ldes_min_fragments [https://edmerp.seadatanet.org/ldes/feed]" classname="LDES-seadatanet" time="2.4318695068359375e-05">
+		<testcase name="ldes_min_fragments [https://edmerp.seadatanet.org/ldes/feed]" classname="LDES-seadatanet" time="2.3603439331054688e-05">
 			<system-out>Traversing LDES feed from: https://edmerp.seadatanet.org/ldes/feed
 Fetching LDES fragment: https://edmerp.seadatanet.org/ldes/feed?from=2026-04-27T14%3A01%3A02%2B02%3A00&amp;to=2026-04-28T14%3A01%3A02%2B02%3A00
 HTTP 200, Content-Type: 'text/turtle;charset=UTF-8', format: turtle
@@ -777,7 +777,7 @@ Traversed 6 LDES fragment(s) (following tree:Relation → tree:node links); requ
   fragment: https://edmerp.seadatanet.org/ldes/feed?from=2026-04-27T14%3A01%3A02%2B02%3A00&amp;to=2026-04-28T14%3A01%3A02%2B02%3A00
 </system-out>
 		</testcase>
-		<testcase name="ldes_max_age_youngest_member [https://edmerp.seadatanet.org/ldes/feed]" classname="LDES-seadatanet" time="0.0001571178436279297">
+		<testcase name="ldes_max_age_youngest_member [https://edmerp.seadatanet.org/ldes/feed]" classname="LDES-seadatanet" time="0.00015306472778320312">
 			<system-out>Traversing LDES feed from: https://edmerp.seadatanet.org/ldes/feed
 Fetching LDES fragment: https://edmerp.seadatanet.org/ldes/feed?from=2026-04-27T14%3A01%3A02%2B02%3A00&amp;to=2026-04-28T14%3A01%3A02%2B02%3A00
 HTTP 200, Content-Type: 'text/turtle;charset=UTF-8', format: turtle
@@ -791,20 +791,20 @@ Fetching LDES fragment: https://edmerp.seadatanet.org/ldes/feed?from=2026-03-30T
 HTTP 200, Content-Type: 'text/turtle;charset=UTF-8', format: turtle
 Traversal complete: 6 fragment(s) fetched, 1646 total triple(s)
 Checking age of youngest tree:member across 6 traversed fragment(s) of: https://edmerp.seadatanet.org/ldes/feed
-Youngest member timestamp: 2026-04-28T10:02:45+02:00; age: 338.91 hour(s); maximum allowed: 730 hour(s)
+Youngest member timestamp: 2026-04-28T10:02:45+02:00; age: 339.01 hour(s); maximum allowed: 730 hour(s)
 </system-out>
 		</testcase>
 		<properties>
 			<property name="urls" value="https://edmo.seadatanet.org/ldes/feed, https://edmerp.seadatanet.org/ldes/feed"/>
-			<property name="provenance" value="https://github.com/vliz-be-opsci/GRMPy_EMODnet/blob/12ffd814d750045a4bfc1bba8f94fb251e3d4dc5/EMODnet/tests.yaml"/>
+			<property name="provenance" value="https://github.com/vliz-be-opsci/GRMPy_EMODnet/blob/93c16c5806526995c786734efc3cef0621de73a5/EMODnet/tests.yaml"/>
 			<property name="min_members" value="20"/>
 			<property name="min_fragments" value="6"/>
 			<property name="max_age_youngest_member" value="730"/>
 			<property name="create-issue" value="true"/>
 		</properties>
 	</testsuite>
-	<testsuite name="SPARQL-endpoints-resource-availability" timestamp="2026-05-12T10:57:16.955902+00:00" tests="12" errors="0" failures="4" skipped="0" time="6.187005043029785">
-		<testcase name="dns_resolution [https://edmo.seadatanet.org/sparql/sparql]" classname="SPARQL-endpoints-resource-availability" time="0.3940739631652832">
+	<testsuite name="SPARQL-endpoints-resource-availability" timestamp="2026-05-12T11:03:17.470213+00:00" tests="12" errors="0" failures="4" skipped="0" time="4.254681825637817">
+		<testcase name="dns_resolution [https://edmo.seadatanet.org/sparql/sparql]" classname="SPARQL-endpoints-resource-availability" time="0.3544652462005615">
 			<system-out>Resolving hostname: edmo.seadatanet.org
 resolved_ip: 77.87.163.212
 </system-out>
@@ -818,81 +818,81 @@ resolved_ip: 77.87.163.212
 			<property name="check-http-availability" value="true"/>
 			<property name="check-https-availability" value="true"/>
 			<property name="verify-ssl" value="true"/>
-			<property name="provenance" value="https://github.com/vliz-be-opsci/GRMPy_EMODnet/blob/12ffd814d750045a4bfc1bba8f94fb251e3d4dc5/EMODnet/tests.yaml"/>
+			<property name="provenance" value="https://github.com/vliz-be-opsci/GRMPy_EMODnet/blob/93c16c5806526995c786734efc3cef0621de73a5/EMODnet/tests.yaml"/>
 			<property name="create-issue" value="true"/>
 		</properties>
-		<testcase name="http_availability [https://edmo.seadatanet.org/sparql/sparql]" classname="SPARQL-endpoints-resource-availability" time="0.4614448547363281">
-			<system-out>response_time_s: 0.461
+		<testcase name="http_availability [https://edmo.seadatanet.org/sparql/sparql]" classname="SPARQL-endpoints-resource-availability" time="0.32269763946533203">
+			<system-out>response_time_s: 0.323
 status_code: 301
 redirects_to: https://edmo.seadatanet.org:443/sparql/sparql
 OK: HTTP endpoint reachable (redirects to HTTPS)
 </system-out>
 		</testcase>
-		<testcase name="https_availability [https://edmo.seadatanet.org/sparql/sparql]" classname="SPARQL-endpoints-resource-availability" time="1.0054800510406494">
+		<testcase name="https_availability [https://edmo.seadatanet.org/sparql/sparql]" classname="SPARQL-endpoints-resource-availability" time="0.6002142429351807">
 			<failure message="HTTPS availability check failed">Unexpected status code 404</failure>
-			<system-out>response_time_s: 1.005
+			<system-out>response_time_s: 0.600
 status_code: 404
 Checking HTTPS availability for: https://edmo.seadatanet.org/sparql/sparql
 Timeout: 10s, Max redirects: 3, Verify SSL: True
 Availability check failed: Unexpected status code 404
 </system-out>
 		</testcase>
-		<testcase name="dns_resolution [https://edmerp.seadatanet.org/sparql/sparql]" classname="SPARQL-endpoints-resource-availability" time="0.0015513896942138672">
+		<testcase name="dns_resolution [https://edmerp.seadatanet.org/sparql/sparql]" classname="SPARQL-endpoints-resource-availability" time="0.001981019973754883">
 			<system-out>Resolving hostname: edmerp.seadatanet.org
 resolved_ip: 77.87.163.212
 </system-out>
 		</testcase>
-		<testcase name="http_availability [https://edmerp.seadatanet.org/sparql/sparql]" classname="SPARQL-endpoints-resource-availability" time="0.30899834632873535">
-			<system-out>response_time_s: 0.309
+		<testcase name="http_availability [https://edmerp.seadatanet.org/sparql/sparql]" classname="SPARQL-endpoints-resource-availability" time="0.33893370628356934">
+			<system-out>response_time_s: 0.339
 status_code: 301
 redirects_to: https://edmerp.seadatanet.org:443/sparql/sparql
 OK: HTTP endpoint reachable (redirects to HTTPS)
 </system-out>
 		</testcase>
-		<testcase name="https_availability [https://edmerp.seadatanet.org/sparql/sparql]" classname="SPARQL-endpoints-resource-availability" time="0.9304547309875488">
-			<system-out>response_time_s: 0.930
+		<testcase name="https_availability [https://edmerp.seadatanet.org/sparql/sparql]" classname="SPARQL-endpoints-resource-availability" time="0.44320106506347656">
+			<system-out>response_time_s: 0.443
 status_code: 200
-OK: HTTPS available, status 200 in 0.930s
+OK: HTTPS available, status 200 in 0.443s
 </system-out>
 		</testcase>
-		<testcase name="dns_resolution [https://sparql.ifremer.fr/csr/query]" classname="SPARQL-endpoints-resource-availability" time="0.16358041763305664">
+		<testcase name="dns_resolution [https://sparql.ifremer.fr/csr/query]" classname="SPARQL-endpoints-resource-availability" time="0.12190413475036621">
 			<system-out>Resolving hostname: sparql.ifremer.fr
 resolved_ip: 134.246.142.39
 </system-out>
 		</testcase>
-		<testcase name="http_availability [https://sparql.ifremer.fr/csr/query]" classname="SPARQL-endpoints-resource-availability" time="0.6405484676361084">
-			<system-out>response_time_s: 0.641
+		<testcase name="http_availability [https://sparql.ifremer.fr/csr/query]" classname="SPARQL-endpoints-resource-availability" time="0.4770796298980713">
+			<system-out>response_time_s: 0.477
 status_code: 301
 redirects_to: https://sparql.ifremer.fr/csr/query
 OK: HTTP endpoint reachable (redirects to HTTPS)
 </system-out>
 		</testcase>
-		<testcase name="https_availability [https://sparql.ifremer.fr/csr/query]" classname="SPARQL-endpoints-resource-availability" time="0.9649291038513184">
+		<testcase name="https_availability [https://sparql.ifremer.fr/csr/query]" classname="SPARQL-endpoints-resource-availability" time="0.7399649620056152">
 			<failure message="HTTPS availability check failed">Unexpected status code 404</failure>
-			<system-out>response_time_s: 0.965
+			<system-out>response_time_s: 0.740
 status_code: 404
 Checking HTTPS availability for: https://sparql.ifremer.fr/csr/query
 Timeout: 10s, Max redirects: 3, Verify SSL: True
 Availability check failed: Unexpected status code 404
 </system-out>
 		</testcase>
-		<testcase name="dns_resolution [https://vocab.nerc.ac.uk/sparql/sparql]" classname="SPARQL-endpoints-resource-availability" time="0.14543533325195312">
+		<testcase name="dns_resolution [https://vocab.nerc.ac.uk/sparql/sparql]" classname="SPARQL-endpoints-resource-availability" time="0.10026168823242188">
 			<system-out>Resolving hostname: vocab.nerc.ac.uk
 resolved_ip: 192.171.196.70
 </system-out>
 		</testcase>
-		<testcase name="http_availability [https://vocab.nerc.ac.uk/sparql/sparql]" classname="SPARQL-endpoints-resource-availability" time="0.5478427410125732">
+		<testcase name="http_availability [https://vocab.nerc.ac.uk/sparql/sparql]" classname="SPARQL-endpoints-resource-availability" time="0.3183903694152832">
 			<failure message="HTTP availability check failed">Unexpected status code 404</failure>
-			<system-out>response_time_s: 0.548
+			<system-out>response_time_s: 0.318
 status_code: 404
 Checking HTTP availability for: http://vocab.nerc.ac.uk/sparql/sparql
 Timeout: 10s, Max redirects: 3, Verify SSL: True
 Availability check failed: Unexpected status code 404
 </system-out>
 		</testcase>
-		<testcase name="https_availability [https://vocab.nerc.ac.uk/sparql/sparql]" classname="SPARQL-endpoints-resource-availability" time="0.6226656436920166">
+		<testcase name="https_availability [https://vocab.nerc.ac.uk/sparql/sparql]" classname="SPARQL-endpoints-resource-availability" time="0.43558812141418457">
 			<failure message="HTTPS availability check failed">Unexpected status code 404</failure>
-			<system-out>response_time_s: 0.623
+			<system-out>response_time_s: 0.436
 status_code: 404
 Checking HTTPS availability for: https://vocab.nerc.ac.uk/sparql/sparql
 Timeout: 10s, Max redirects: 3, Verify SSL: True
@@ -900,24 +900,24 @@ Availability check failed: Unexpected status code 404
 </system-out>
 		</testcase>
 	</testsuite>
-	<testsuite name="cors-compliance-sparql-basic" timestamp="2026-05-12T10:57:26.278524+00:00" tests="4" errors="0" failures="1" skipped="0" time="3.08817458152771">
-		<testcase name="access_control_allow_origin [https://edmo.seadatanet.org/sparql/sparql] [lenient]" classname="cors-compliance-sparql-basic" time="0.7691831588745117">
+	<testsuite name="cors-compliance-sparql-basic" timestamp="2026-05-12T11:03:21.519942+00:00" tests="4" errors="0" failures="1" skipped="0" time="2.39845609664917">
+		<testcase name="access_control_allow_origin [https://edmo.seadatanet.org/sparql/sparql] [lenient]" classname="cors-compliance-sparql-basic" time="0.43648815155029297">
 			<failure message="Header 'access-control-allow-origin' is missing">Header absent in response from https://edmo.seadatanet.org/sparql/sparql</failure>
 			<system-out>OPTIONS https://edmo.seadatanet.org/sparql/sparql with Origin: https://vliz.be
 access-control-allow-origin: ''
 </system-out>
 		</testcase>
-		<testcase name="access_control_allow_origin [https://edmerp.seadatanet.org/sparql/sparql] [lenient]" classname="cors-compliance-sparql-basic" time="0.6195733547210693">
+		<testcase name="access_control_allow_origin [https://edmerp.seadatanet.org/sparql/sparql] [lenient]" classname="cors-compliance-sparql-basic" time="0.44095540046691895">
 			<system-out>OPTIONS https://edmerp.seadatanet.org/sparql/sparql with Origin: https://vliz.be
 access-control-allow-origin: '*'
 </system-out>
 		</testcase>
-		<testcase name="access_control_allow_origin [https://sparql.ifremer.fr/csr/query] [lenient]" classname="cors-compliance-sparql-basic" time="1.038032054901123">
+		<testcase name="access_control_allow_origin [https://sparql.ifremer.fr/csr/query] [lenient]" classname="cors-compliance-sparql-basic" time="1.081822395324707">
 			<system-out>OPTIONS https://sparql.ifremer.fr/csr/query with Origin: https://vliz.be
 access-control-allow-origin: 'https://vliz.be'
 </system-out>
 		</testcase>
-		<testcase name="access_control_allow_origin [https://vocab.nerc.ac.uk/sparql/sparql] [lenient]" classname="cors-compliance-sparql-basic" time="0.6613860130310059">
+		<testcase name="access_control_allow_origin [https://vocab.nerc.ac.uk/sparql/sparql] [lenient]" classname="cors-compliance-sparql-basic" time="0.439190149307251">
 			<system-out>OPTIONS https://vocab.nerc.ac.uk/sparql/sparql with Origin: https://vliz.be
 access-control-allow-origin: '*'
 </system-out>
@@ -928,7 +928,7 @@ access-control-allow-origin: '*'
 			<property name="timeout" value="30"/>
 			<property name="https-redirect" value="false"/>
 			<property name="probe-origin" value="https://vliz.be"/>
-			<property name="provenance" value="https://github.com/vliz-be-opsci/GRMPy_EMODnet/blob/12ffd814d750045a4bfc1bba8f94fb251e3d4dc5/EMODnet/tests.yaml"/>
+			<property name="provenance" value="https://github.com/vliz-be-opsci/GRMPy_EMODnet/blob/93c16c5806526995c786734efc3cef0621de73a5/EMODnet/tests.yaml"/>
 			<property name="create-issue" value="false"/>
 		</properties>
 	</testsuite>
