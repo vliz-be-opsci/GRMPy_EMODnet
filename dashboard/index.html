@@ -812,7 +812,7 @@
 
                 // Check for a #run=<commit_sha> fragment and pre-select the matching run
                 const fragment = window.location.hash;
-                const fragmentMatch = fragment.match(/^#run=(([0-9a-f]{7})|([0-9a-f]{40}))$/i);
+                const fragmentMatch = fragment.match(/^#run=([0-9a-f]{40})$/i);
                 if (fragmentMatch) {
                     const targetSha = fragmentMatch[1].toLowerCase();
                     const matchIndex = runs.findIndex(r => r.commit_sha && r.commit_sha.toLowerCase().startsWith(targetSha));
@@ -1054,7 +1054,7 @@
                     if (k === 'provenance' && typeof v === 'string' && v.startsWith('https://')) {
                         // For GitHub blob URLs, show only the path after the commit SHA
                         // e.g. https://github.com/.../blob/<sha>/dir/file.yaml -> dir/file.yaml
-                        const blobMatch = v.match(/^https:\/\/github\.com\/[^/]+\/[^/]+\/blob\/[0-9a-f]{7,64}\/(.+)$/);
+                        const blobMatch = v.match(/^https:\/\/github\.com\/[^/]+\/[^/]+\/blob\/[0-9a-f]{40}\/(.+)$/);
                         const label = blobMatch ? blobMatch[1] : v;
                         displayValue = `<a href="${escapeHtml(v)}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)}</a>`;
                     } else {
