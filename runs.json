@@ -1,6 +1,27 @@
 {
-  "generated_at": "2026-05-12T10:57:32.383583Z",
+  "generated_at": "2026-05-12T11:03:26.530190Z",
   "runs": [
+    {
+      "commit_sha": "59d773fb3e717a51f9a7725a173c32af6a2d357c",
+      "short_sha": "59d773f",
+      "date": "2026-05-12T11:03:24.852457Z",
+      "run_number": 5,
+      "run_attempt": 1,
+      "source_branch": "main",
+      "config_file": "EMODnet",
+      "triggered_by": "cedricdcc",
+      "workflow_name": "Run Configured Tests",
+      "run_id": "25730274306",
+      "summary": {
+        "total_tests": 70,
+        "passed": 52,
+        "failed": 13,
+        "errors": 0,
+        "skipped": 5,
+        "pass_rate": 74.29,
+        "duration": 11.6897
+      }
+    },
     {
       "commit_sha": "117724d30ced920588cbb4796c01e10afa4385e5",
       "short_sha": "117724d",
