@@ -815,7 +815,11 @@
                 const fragmentMatch = fragment.match(/^#run=([0-9a-f]{7,40})$/i);
                 if (fragmentMatch) {
                     const targetSha = fragmentMatch[1].toLowerCase();
-                    const matchIndex = runs.findIndex(r => r.commit_sha && r.commit_sha.toLowerCase().startsWith(targetSha));
+                    const matchIndex = runs.findIndex(r => {
+                        if (!r.commit_sha) return false;
+                        const runSha = r.commit_sha.toLowerCase();
+                        return targetSha.length === 40 ? runSha === targetSha : runSha.startsWith(targetSha);
+                    });
                     if (matchIndex !== -1) {
                         select.value = matchIndex;
                     }
