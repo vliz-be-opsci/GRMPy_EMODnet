@@ -20,7 +20,7 @@ tests:
   input-echo-fail:
     image: ghcr.io/vliz-be-opsci/grmp-test-implementations-input-echo-test:main
     config:
-      url:
+      url:  # intentionally empty: demonstrates failing validation path
       supports-content-types:
         - text/turtle
         - application/trig

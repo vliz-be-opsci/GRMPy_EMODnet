@@ -110,7 +110,7 @@ jobs:
           git add report.xml
           git add index.html 2>/dev/null || true
           
-          SHORT_SHA=$(echo "$GITHUB_SHA" | cut -c1-7)
+          SHORT_SHA="${GITHUB_SHA:0:7}"
           COMMIT_MSG="Test run #${RUN_NUMBER} attempt ${RUN_ATTEMPT} (${REF_NAME} @ ${SHORT_SHA})"
           COMMIT_BODY="Config: ${config_directory}
           Triggered by: ${ACTOR}
