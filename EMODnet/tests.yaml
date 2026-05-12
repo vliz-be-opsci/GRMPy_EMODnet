@@ -1,0 +1,51 @@
+tests:
+  LDES-feeds-vocab-nerc:
+    image: ghcr.io/vliz-be-opsci/grmp-test-implementations-ldes-validation:main
+    config:
+      TIMEOUT: 600  # Optional: timeout in seconds
+      URLS: ['http://vocab.nerc.ac.uk/ldes/P01/','http://vocab.nerc.ac.uk/ldes/P02/','http://vocab.nerc.ac.uk/ldes/P06/','http://vocab.nerc.ac.uk/ldes/L22','http://vocab.nerc.ac.uk/ldes/S09/', 'http://vocab.nerc.ac.uk/ldes/S25/']
+      MIN-MEMBERS: 20
+      MIN-FRAGMENTS: 6
+      CREATE-ISSUE: true
+      MAX-AGE-YOUNGEST-MEMBER: 730
+  LDES-feeds-mtt-vliz-be:
+    image: ghcr.io/vliz-be-opsci/grmp-test-implementations-ldes-validation:main
+    config:
+      TIMEOUT: 600  # Optional: timeout in seconds
+      URLS: ['https://mtt.vliz.be/api/ldes/data/1/latest.ttl']
+      MIN-MEMBERS: 20
+      MIN-FRAGMENTS: 6
+      CREATE-ISSUE: true
+      MAX-AGE-YOUNGEST-MEMBER: 170
+  LDES-seadatanet: 
+    image: ghcr.io/vliz-be-opsci/grmp-test-implementations-ldes-validation:main
+    config:
+      TIMEOUT: 600  # Optional: timeout in seconds
+      URLS: ['https://edmo.seadatanet.org/ldes/feed', 'https://edmerp.seadatanet.org/ldes/feed']
+      MIN-MEMBERS: 20
+      MIN-FRAGMENTS: 6
+      CREATE-ISSUE: true
+      MAX-AGE-YOUNGEST-MEMBER: 730
+  SPARQL-endpoints-resource-availability:
+    image: ghcr.io/vliz-be-opsci/grmp-test-implementations-resource-availability:main
+    config:
+      create-issue: true
+      urls: 
+        - https://edmo.seadatanet.org/sparql/sparql
+        - https://edmerp.seadatanet.org/sparql/sparql
+        - https://sparql.ifremer.fr/csr/query
+        - https://vocab.nerc.ac.uk/sparql/sparql
+      max-redirects: 3
+      timeout: 10
+      verify-ssl: true
+      check-http-availability: true
+      check-https-availability: true
+  cors-compliance-sparql-basic:
+    image: ghcr.io/vliz-be-opsci/grmp-test-implementations-cors-compliance:main
+    config:
+      urls: 
+         - https://edmo.seadatanet.org/sparql/sparql
+         - https://edmerp.seadatanet.org/sparql/sparql
+         - https://sparql.ifremer.fr/csr/query
+         - https://vocab.nerc.ac.uk/sparql/sparql
+

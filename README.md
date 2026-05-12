@@ -15,23 +15,29 @@ The orchestrator can be found [here](https://github.com/vliz-be-opsci/grmp-frame
 │       └── orchestrate-config-tests.yml   ← main orchestration workflow
 ├── dashboard/
 │   └── index.html                         ← dashboard (pushed to report branch on each run)
-├── input-echo-demo/                       ← simple demonstrator using input-echo-test
-├── resource-analyses/                     ← resource availability, certificate, CORS and content negotiation checks
-└── shacl-example/                         ← SHACL validation demonstration
+├── tests /                            ← top-level folder for configuration directories
 ```
 
 ---
 
-## Available Demonstrators
+## Tests
 
-### `input-echo-demo`
-A minimal demonstration of the GRMP framework using the input-echo-test. It does not test any external resource — it simply verifies that configuration parameters are passed correctly through the orchestrator to the test container. Useful for validating a new setup.
+The following resources are tested
 
-### `resource-analyses`
-A practical collection of tests for monitoring external resources. Uses the resource-availability, check-certificate, cors-compliance and content-negotiation test implementations to verify that configured URLs are reachable, have valid certificates, correctly advertise CORS headers, and properly respond to content negotiation requests.
-
-### `shacl-example`
-An early demonstration of the shacl-validation test, verifying that RDF graphs harvested from configured data URLs conform to a given SHACL shapes graph.
+| Resource URI | Resource type | Description | tests |
+| --- | --- | --- | --- |
+| http://vocab.nerc.ac.uk/ldes/P01/ | LDES | Terms built using the BODC parameter semantic model designed to describe individual measured phenomena. May be used to mark up sets of data such as a NetCDF array or spreadsheet column. Units must be specified when using a P01 code. The P06 unit that is linked to individual P01 in the NVS is the one used in BODC's systems but external users can use any appropriate units. | * LDES test |
+| http://vocab.nerc.ac.uk/ldes/P06/ | LDES | Terms approved for use by BODC to describe the measurement units for data held in its repositories. | * LDES test |
+| http://vocab.nerc.ac.uk/ldes/L22/ | LDES | Terms for distinct sampling or measuring devices that may be identified in the real world in terms of manufacturer and model number. | * LDES test |
+| http://vocab.nerc.ac.uk/ldes/S09/ | LDES | Controlled vocabulary defining the terms that may be used for biological entity size (part of the what theme) in the BODC parameter semantic model. | * LDES test |
+| http://vocab.nerc.ac.uk/ldes/S25/ | LDES | Terms used to describe biological entities (organisms or parts thereof) in the BODC Parameter Usage Vocabulary | * LDES test |
+| https://mtt.vliz.be/api/ldes/data/1/latest.ttl | LDES | BODC P02 translations derived from mtt.vliz.be API | * LDES test | 
+| https://edmo.seadatanet.org/ldes/feed | LDES | EDMO LDES feed | * LDES test |
+| https://edmerp.seadatanet.org/ldes/feed | LDES | EDMERP LDES feed | * LDES test |
+| https://edmo.seadatanet.org/sparql/sparql | SPARQL endpoint | EDMO SPARQL endpoint | * content-availability * CORS |
+| https://edmerp.seadatanet.org/sparql/sparql | SPARQL endpoint | EDMERP SPARQL endpoint | * content-availability * CORS |
+| https://sparql.ifremer.fr/csr/query | SPARQL endpoint | Ifremer CSR SPARQL endpoint | * content-availability * CORS |
+| https://vocab.nerc.ac.uk/sparql/sparql | SPARQL endpoint | NVS SPARQL endpoint | * content-availability * CORS |
 
 ---
 

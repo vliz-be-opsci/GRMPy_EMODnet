@@ -1,8 +1,0 @@
-tests:
-  shacl-example:
-    image: ghcr.io/vliz-be-opsci/grmp-test-implementations-shacl-validation:main
-    config:
-      SHAPES_URL: "https://raw.githubusercontent.com/SEMICeu/dcat-ap_shacl/master/shacl/dcat-ap.shapes.ttl"
-      DATA_URLS:
-        - "https://data.emobon.embrc.eu/metadata.ttl"  # Example RDF data; replace with your own TTL/RDF URL(s)
-      TIMEOUT: 60  # Optional: timeout in seconds
